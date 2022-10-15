@@ -169,7 +169,7 @@ centers = sorted(centers, key=lambda tup: tup[0])
 cts = np.int32(centers)
 #connect the center of each cones
 cv2.polylines(img, [cts], True, (0, 0, 255), 2, cv2.LINE_AA)  
-cv2.imwrite('answer.png',img)
+cv2.imwrite('false_answer.png',img)
 
 
 # In[ ]:
